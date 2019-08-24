@@ -1,11 +1,6 @@
 import React from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native'
-
-import InputGroup from '../../component/input/InputComponent';
-import CheckBox from '../../component/checkBox/checkBox';
-import Button from '../../component/Button/Button';
-import Curve from '../../component/curve/curve';
-import RadioButton from '../../component/RadioButton/RadioButtonComponent';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
+import {Curve,Button,InputGroup,CheckBox,RadioButton} from '../../component';
 
 
 
@@ -31,7 +26,7 @@ class SignIn extends React.Component {
     render() {
         return (
             <View style={styles.view}>
-                <Curve style={{ marginBottom: 30 }}></Curve>
+                <Curve style={{ marginBottom: 30 }}/>
                 <InputGroup label='Your Name' name='name' value={this.state.name} onChangeText={this.handelChange} placeHolder='Name' />
                 <InputGroup label='Your Email' name='email' value={this.state.email} placeHolder='Name' onChangeText={this.handelChange} />
                 <InputGroup label='create Password' name='password' value={this.state.password} onChangeText={this.handelChange}
@@ -41,7 +36,7 @@ class SignIn extends React.Component {
                     style={styles.CheckBoxContainer}
                 >
 
-                    <CheckBox checked={this.state.checked}></CheckBox>
+                    <CheckBox checked={this.state.checked}/>
                     <Text style={styles.text} >i gree with & conditions</Text>
 
                 </TouchableOpacity>

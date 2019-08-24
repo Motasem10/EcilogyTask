@@ -2,13 +2,7 @@
 
 import React, { Fragment } from 'react';
 import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
   StatusBar,
-  ImageBackground
 
 } from 'react-native';
 import RootNavigator from './src/pages/rootNavigator';
@@ -23,7 +17,7 @@ class App extends React.Component  {
     }
   }
   componentDidMount=()=>{
-    setTimeout(()=>this.setState({welcome:false}),2);
+    setTimeout(()=>this.setState({welcome:false}),1000);
   }
 render(){
   return (
@@ -34,18 +28,5 @@ render(){
     </Fragment >
   );
 };}
-
-const styles = StyleSheet.create({
-  view:{
-    backgroundColor:'#6bbe43',
-    width:90,
-    height:90,
-    borderColor:'black',
- borderBottomEndRadius:90,
- borderBottomStartRadius:90,
- transform:[{scaleX:5}]
-
-  }
-});
 
 export default App;

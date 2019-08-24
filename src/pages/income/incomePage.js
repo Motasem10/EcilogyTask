@@ -1,9 +1,7 @@
 import React from 'react';
-import { View, Text, StyleSheet, ActivityIndicator } from 'react-native';
-// Use prebuilt version of RNVI in dist folder
+import { View, Text, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
-import BackgroundImage from '../../component/BackGroundImage/backgroundImage';
-import ButtontCustom from '../../component/Button/Button';
+import {Button,BackgroundImage} from '../../component';
 
 // Generate required css
 
@@ -29,7 +27,7 @@ const Income = () => {
                     <Text style={{ color: '#a9a9a9', fontWeight: 'bold' }}>Income</Text>
                 </View>
 
-                <ButtontCustom title='CASH OUT' icon='arrow-right' />
+                <Button title='CASH OUT' icon='arrow-right' />
             </View>
         </View>
     )

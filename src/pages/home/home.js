@@ -1,11 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/dist/FontAwesome5';
-import BackgroundImage from '../../component/BackGroundImage/backgroundImage';
-import IndecatorBar from '../../component/IndecatorBar/IndecatorBar';
-
-
-// Generate required css
+import {IndecatorBar,BackgroundImage} from '../../component';
 
 class Home extends React.Component {
     constructor() {
